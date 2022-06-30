@@ -6,5 +6,5 @@ In this project, I performed the fetch operation using the Axios library and tri
 - Axios
 - onClick Events
 ***
-[To See All Project Click Here!!]()
-![]()
+[To See All Project Click Here!!](https://react-randomuser.netlify.app)
+![](https://github.com/MuazV/random-user-app-react_project/blob/master/src/assets/Animation.gif)
