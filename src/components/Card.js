@@ -1,8 +1,10 @@
 import React from "react";
 import "./Card.scss";
-import { HiOutlineMailOpen } from "react-icons/hi";
-import { AiFillPhone } from "react-icons/ai";
-import { GrMapLocation } from "react-icons/gr";
+
+import phonesvg from "../assets/phone.svg";
+import emailsvg from "../assets/email.svg";
+import locationsvg from "../assets/location.svg";
+
 
 const Card = ({ user }) => {
   const {
@@ -23,18 +25,20 @@ const Card = ({ user }) => {
       <h3>
         <span>{title}</span> <span>{first}</span> <span>{last}</span>
       </h3>
-      <div className="mail-icon">
-        <HiOutlineMailOpen />
+      <div className="svg">
+        <img src={emailsvg} alt="email" />
       </div>
-      <h4>{user.email}</h4>
-      <div className="phone-icon">
-        <AiFillPhone />
+      <h4>{email}</h4>
+      <div className="svg">
+        <img src={phonesvg} alt="email" />
       </div>
       <h4>{cell}</h4>
-      <div className="location-icon">
-        <GrMapLocation />
+      <div className="svg">
+        <img src={locationsvg} alt="email" />
       </div>
-      
+      <h4><span>{country}</span> <span>{city}</span></h4>
+      <h4 className="age">Age: {age}</h4>
+      <h4 className="regdate">Register Date: {date.substring(0,10)}</h4>
     </div>
   );
 };

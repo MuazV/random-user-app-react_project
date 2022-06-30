@@ -32,11 +32,14 @@ function App() {
   }, []);
 
   return (
+    <>
+
     <div className="App">
       <Card user={user}/>
       {/* <h2>{user.email}</h2> */}
-      <button onClick={() => users()}>Random User</button>
     </div>
+      <button className="button" onClick={() => users()}>Random User</button>
+    </>
   );
 }
 
