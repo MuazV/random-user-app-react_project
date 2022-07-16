@@ -42,7 +42,7 @@ function App() {
 
     <div className="App">
       <Card user={user}/>
-      {/* <h2>{user.email}</h2> */}
+    
     </div>
       <button className="button" onClick={() => users()}>Random User</button>
     </>
